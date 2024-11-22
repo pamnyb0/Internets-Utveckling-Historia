@@ -1,0 +1,620 @@
+/* Globala stilar */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #c2c2c3;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    h1, h2, h3 {
+    font-family: 'VT323', monospace !important;
+}
+
+
+}
+
+/* Stil för hörnlogotyper */
+.corner-logo {
+    position: absolute;
+    width: 50px; /* Justera storleken */
+    height: auto;
+    z-index: 10;
+}
+
+/* Positionering för vänstra hörnet */
+.corner-logo.left {
+    top: 10px;
+    left: 10px;
+}
+
+/* Positionering för högra hörnet */
+.corner-logo.right {
+    top: 10px;
+    right: 10px;
+}
+
+/* Navigeringsmeny */
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: #040404;
+    flex-wrap: wrap; /* Gör menyn flexibel för mindre skärmar */
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+.menu li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Media Queries för mindre skärmar */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        background-color: #030303; /* Behåll samma bakgrund */
+    }
+
+    .corner-logo {
+        width: 40px; /* Justera storlek på logotyper på små skärmar */
+        top: 5px;
+    }
+    
+    /* Flyttar logotyperna inåt så att de inte överlappar menyn */
+    .corner-logo.left {
+        left: 5px;
+    }
+
+    .corner-logo.right {
+        right: 5px;
+    }
+    
+    .menu li {
+        margin: 5px 0; /* Justerar avståndet mellan menyobjekten */
+    }
+}
+
+/* Hero Section */
+.hero {
+    padding: 80px 20px;
+    background: url('../Images/ludovic-toinel-unsplash.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: white;
+    position: relative;
+    .hero h1 {
+    font-family: 'VT323', monospace !important;
+    font-size: 4rem; !important
+    color: white; 
+}
+}
+
+.image-credit {
+    font-size: 0.6em;
+    color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Content Sections */
+
+.content-block h2 {
+    font-family: 'VT323', monospace !important;
+    font-size: 2.5rem; !important
+    color: black; 
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Stil för smalare textinnehåll */
+.narrow-content {
+    max-width: 1000px; /* Sätter en maxbredd för innehållet */
+    margin: 0 auto; /* Centrera innehållet */
+    padding: 10px; /* Lägger till lite padding för att skapa luft */
+    text-align: justify; /* Justera texten för bättre läsbarhet */
+}
+
+.content {
+    padding: 40px 20px;
+}
+
+.content-block {
+    margin-top: -20px;
+    margin-bottom: -40px;
+    text-align: center;
+}
+
+/* Bildstil för NASA-bilden */
+.hover-link {
+    position: relative; /* För att positionera hover-texten korrekt */
+    display: inline-block;
+}
+
+/* NASA-bilden */
+.nasa-image {
+    width: 85%; /* Justerar bredden för att vara bredare */
+    max-width: 600px; /* Sätter en maxbredd så den inte blir för stor */
+    height: auto; /* Bevarar bildens proportioner */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin: 10px auto; /* Centrera med automargin */
+    display: block; /* Gör att bilden centrerar i block */
+    object-fit: cover;
+    aspect-ratio: 16 / 7; /* Gör bilden kortare */
+    margin-bottom: 70px;
+}
+
+/* Stilen för hover-text */
+.hover-text {
+    display: none; /* Döljs som standard */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Mörk bakgrund */
+    color: #fff; /* Vit text */
+    padding: 10px;
+    border-radius: 8px;
+    width: 140px;
+    font-size: 0.9em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: center;
+}
+
+/* Visa hover-texten när användaren håller musen över bilden */
+.hover-link:hover .hover-text {
+    display: block;
+}
+
+/* Hand-pekaren visas när man hovrar över länken */
+.hover-link {
+    cursor: pointer;
+}
+
+/* Kredittext för bilder */
+.image-credit {
+    font-size: 0.7em;
+    color: rgba(60, 60, 60, 0.7);
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+.content-block h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.content-block img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-top: 10px;
+}
+/* Sektion för Påverkande Personer */
+.dark-background {
+    background-color: #2a2a2a; /* Mörkare bakgrund */
+    padding: 50px 0;
+}
+
+.influential {
+    text-align: center;
+    padding: 40px 20px;
+    color: #f5f5f5; /* Ljus textfärg */
+}
+
+.influential-item {
+    color: #ffffff; 
+      color: #ffffff !important; /* Vit text för länkar */
+    font-weight: bold; /* Fetstil för bättre synlighet */
+    margin-top: 10px; /* Utrymme ovanför text */
+    text-decoration: none; /* Ingen understrykning */
+    position: relative;
+    width: 190px !important /* Enhetliga cirklar (den fungerade inte :( ...) */
+    height: 180px;
+    text-align: center;
+}
+
+.influential-wrapper {
+    display: flex;
+    justify-content: center; /* Centrera objekten */
+    align-items: center; 
+    gap: 40px; /* Mer avstånd för snyggare design */
+}
+
+
+/* Gör bilderna till enhetliga cirklar (den fungerade inte :( bortkastade timmar...) */
+.circle-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Ger bilderna en cirkulär form */
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+
+.hover-text {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    width: 140px;
+    font-size: 0.9em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: center;
+}
+
+.influential-item:hover .hover-text {
+    display: block;
+}
+
+/* Videosektion */
+.video {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+blockquote {
+    font-family: 'Georgia', serif;
+    font-size: 1.5em;
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #3a3939;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    display: inline-block;
+}
+/* Nedladdningssektion */
+.download {
+    text-align: center; /* Centrera allt innehåll i sektionen */
+    padding: 40px 20px;
+    background-color: #f1f1f1;
+}
+
+.download blockquote {
+    font-family: 'Georgia', serif;
+    font-size: 1.5em;
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #3a3939;
+    padding: 10px 20px;
+    margin-bottom: -10px;
+    background-color: #f9f9f9;
+    display: inline-block;
+}
+
+.download-btn {
+    display: inline-block; /* Gör knappen inline för bättre positionering */
+    background-color: #2f4e34;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Centrera knappen under citatet */
+.download-btn-wrapper {
+    text-align: center; /* Håll knappen centrerad */
+    margin-top: 20px;
+}
+
+.download-btn:hover {
+    background-color: #e55342;
+}
+
+
+/* Formulär */
+.contact-form {
+    padding: 20px;
+    text-align: center;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    max-width: 600px; /* Minskad bredd för ett kompakt formulär */
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form label {
+    width: 80%;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 15px; /* Avstånd ovanför varje etikett */
+}
+
+.contact-form input, .contact-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    font-size: 0.9em;
+    background-color: #f9f9f9;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #ff6347;
+    outline: none;
+}
+
+.submit-btn {
+    background-color: #444;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.submit-btn:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: rgb(211, 206, 206);
+    font-size: 12px;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ================== Påverkande Personer och Företag Section ================== */
+/* Påverkande Faktorers Bakgrund */
+.influences-background {
+    background: url('../Images/adam-birkett-unsplash.jpg') no-repeat center center/cover;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Påverkande Faktorers Layout */
+.influential-content {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+/* Påverkande Faktorers Item */
+.influence-item {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.9); /* Lätt bakgrund för att lyfta fram */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    align-items: center;
+}
+
+/* Bildstil */
+.influence-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+/* Textstil */
+.influence-text h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.influence-text p {
+    font-size: 1em;
+    color: #333;
+}
+
+/* ================== Teknisk Utveckling Section ================== */
+/* Bakgrund för Teknisk Utveckling */
+.technical-content {
+    background: url('../Images/federica-galli-unsplash.jpg') no-repeat center center;
+    background-size: cover; /* Gör så att bilden täcker hela ytan */
+    padding: 100px 20px; /* Lägger till lite utrymme runt texten */
+    color: rgb(0, 0, 0); /* Gör texten vit så den syns bra */
+    min-height: 100vh; /* Täck hela höjden av skärmen */
+    text-align: center; /* Centrerar texten i mitten */
+}
+.transparent-box {
+    background-color: rgba(255, 255, 255, 0.6); /* Vit bakgrund med 60% genomskinlighet */
+    padding: 20px; /* Utrymme inuti rutan */
+    border-radius: 10px; /* Rundade hörn */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Mjuk skugga för bättre synlighet */
+    max-width: 800px; /* Valfritt: maxbredd */
+    margin: 20px auto; /* Centrerar rutan */
+}
+.technical-content h3 {
+    font-family: 'VT323', monospace !important;
+    font-size: 2.5rem; !important
+    color: black; 
+    margin-top: 20px;
+    text-align: center; 
+}
+
+.bottom-image {
+    width: 100%; /* Gör så att bilden fyller hela bredden av containern */
+    height: auto; /* Behåller bildens proportioner */
+    display: block; /* Ser till att bilden beter sig som ett blockelement, staplas snyggt */
+    margin-top: 20px; /* Lägger till lite mellanrum ovanför bilden */
+}
+
+/* ================== Agil Metodik Section ================== */
+
+/* Bakgrund */
+.agile-content {
+    background: url('../Images/scott-graham-unsplash.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 100px 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tillämpar Roboto för rubriker och text i Agile-sektionen */
+.agile-content h1, 
+.agile-content h2, 
+.agile-content h3, 
+.agile-content h4, 
+.agile-content h5, 
+.agile-content h6, 
+.agile-content p, 
+.agile-content ol, 
+.agile-content ul, 
+.agile-content li {
+    font-family: 'Roboto', sans-serif !important; /* Roboto endast för Agile-sektion ... den fungerade inte :( !!*/
+}
+
+/* Handskriven font för citat ... den fungerade inte :( !!*/
+.agile-content blockquote {
+    font-family: 'Dancing Script', cursive !important; /* Använd en handskriven font för citat */
+    font-size: 1.8em;
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #3a3939;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    display: inline-block;
+}
+
+/* Transparent block */
+.transparent-block {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+    max-width: 900px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Stil för bild på agila verktyg */
+.tool-image {
+    text-align: center; /* Centrera bilden i sektionen */
+    margin-top: 20px; /* Lägg till utrymme ovanför bilden */
+}
+
+.agile-tools-image {
+    width: 80%; /* Gör bilden 80% av containerns bredd */
+    max-width: 600px; /* Säkerställ att bilden inte är bredare än 600px */
+    border-radius: 8px; /* Lägg till rundade hörn */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Lägg till skugga för en subtil effekt */
+}
+
+/* Anpassning för video container */
+.video-container {
+    margin-top: 20px;
+}
+
+/* ================== Responsiva justeringar för Agile-sektionen ================== */
+
+/* Allmän responsiv stil för mindre skärmar */
+@media (max-width: 1024px) {
+    .agile-content {
+        padding: 80px 15px; /* Minska padding på mindre skärmar */
+        flex-direction: column; /* Vertikal layout för smalare skärmar */
+    }
+
+    .transparent-block {
+        padding: 20px; /* Justera padding för mindre skärmar */
+        max-width: 95%; /* Anpassa bredden för att fylla skärmen */
+    }
+
+    .tool-image {
+        margin-top: 15px; /* Mindre marginal över bilder */
+    }
+
+    .agile-tools-image {
+        width: 90%; /* Gör bilden större för mindre skärmar */
+        max-width: 400px; /* Säkra att den inte blir för stor */
+    }
+
+    blockquote {
+        font-size: 1.2em; /* Justera fontstorlek på citat för bättre läsbarhet */
+    }
+
+    .video-container iframe {
+        width: 100%; /* Fullbredd video */
+        max-width: 100%; /* Gör att videon fyller container */
+        height: auto; /* Låt höjden justeras automatiskt */
+    }
+
+    .menu {
+        flex-direction: column; /* Gör menyn vertikal */
+    }
+
+    .menu li {
+        margin: 5px 0; /* Mer utrymme mellan menyobjekt */
+    }
+}
+
+/* Anpassning för mycket små skärmar som mobiler */
+@media (max-width: 600px) {
+    .agile-content h1, 
+    .agile-content h2, 
+    .agile-content h3 {
+        font-size: 1.5em; /* Minska fontstorlek för bättre läsbarhet */
+    }
+
+    .tool-image {
+        margin-top: 10px;
+    }
+
+    .agile-tools-image {
+        width: 100%; /* Gör bilden fullbredd */
+        max-width: 300px; /* Begränsa maxbredd */
+    }
+
+    .transparent-block {
+        padding: 15px; /* Minska padding ytterligare på mobiler */
+        font-size: 0.9em; /* Mindre fontstorlek för bättre placering */
+    }
+
+    blockquote {
+        font-size: 1em; /* Minska storlek på citatet för att passa */
+    }
+}

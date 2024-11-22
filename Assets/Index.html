@@ -1,0 +1,128 @@
+<!DOCTYPE html> 
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internets Utvecklings Historia</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Header / Navbar -->
+    <header>
+    <!-- Vänster logotyp -->
+    <img src="Images/logo-left.png" alt="Logo vänster" class="corner-logo left">
+    
+    <!-- Navigeringsmeny -->
+    <nav>
+    <ul class="menu">
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="technical.html">Teknisk Utveckling</a></li>
+        <li><a href="influences.html">Påverkande Faktorer</a></li>
+        <li><a href="agile.html">Agil Metodik</a></li>
+    </ul>
+</nav>
+    
+    <!-- Höger logotyp -->
+    <img src="Images/logo-right.png" alt="Logo höger" class="corner-logo right">
+        </nav>
+        <!-- Hero-sektion med titel och beskrivning -->
+        <div class="hero" id="home">
+            <h1>Internets Utveckling</h1>
+            <p>Utforska den spännande historien och utvecklingen av internet.</p>
+            <p class="image-credit">
+                Photo by <a href="https://unsplash.com/@ltoinel?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ludovic Toinel</a> on <a href="https://unsplash.com/photos/boy-playing-at-laptop-inside-room-nGwyaWKFRVI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            </p>
+        </div>
+    </header>
+
+<!-- Huvudinnehåll -->
+<section class="content" id="about-internet">
+    <div class="content-block">
+        <section class="content" id="about-internet">
+    <div class="content-block narrow-content">
+        <h2>Vad är internet?</h2>
+        <p>Internet föddes som en idé för att hjälpa forskare och militärer att dela viktig information snabbt och säkert. Det allra första nätverket, kallat <span class="highlight">ARPANET</span>, startade på 1960-talet i USA. Då var det bara några få datorer som kunde prata med varandra.</p>
+        <p>Men snart öppnades nätverket upp för skolor och forskare, och allt fler människor började använda det. Idag är internet en plats där vi kan lära oss nya saker, spela spel, skicka meddelanden till vänner och hitta svar på nästan vad som helst. Vi använder det varje dag, och det har blivit en stor och viktig del av våra liv.</p>
+        <p>Från små steg har internet vuxit till något magiskt som kopplar ihop miljarder människor världen över!</p></div></section>
+        <a href="technical.html" class="hover-link">
+            <img src="Images/nasa-unsplash.jpg" alt="Bild av rymden från NASA" class="nasa-image">
+            <div class="hover-text">Läs mer om Internets historia</div>
+        </a>
+    </div>
+</section>
+
+<!-- Innehållsblock om personer och företag som påverkat internet -->
+<section class="content dark-background" id="influences">
+    <div class="content-block influential">
+        <h1>Påverkande personer och företag</h1>
+        <div class="influential-wrapper">
+            <a href="influences.html" class="influential-item">
+                <img src="Images/tim-berners-lee.jpg" alt="Tim Berners-Lee" class="circle-image">
+                <div class="hover-text">Tim Berners-Lee - Skaparen av World Wide Web</div>
+                <p>Tim Berners-Lee</p>
+            </a>
+            <a href="influences.html" class="influential-item">
+                <img src="Images/vint-cerf.jpeg" alt="Vint Cerf" class="circle-image">
+                <div class="hover-text">En av "internets fäder". Hjälpte till att utveckla TCP/IP, den grundläggande tekniken.</div>
+                <p>Vint Cerf</p>
+            </a>
+            <a href="influences.html" class="influential-item">
+                <img src="Images/google.jpg" alt="Google" class="circle-image">
+                <div class="hover-text">Google - Revolutionerade informationssökning på nätet</div>
+                <p>Google</p>
+            </a>
+            <a href="influences.html" class="influential-item">
+                <img src="Images/elon-musk.jpg" alt="Elon Musk" class="circle-image">
+                <div class="hover-text">Elon Musk - Utvecklade Starlink för global internetuppkoppling</div>
+                <p>Elon Musk</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- Inbäddad video -->
+<section class="video">
+    <h2>Se en Dokumentär om Internets Historia</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/h8K49dD52WA" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+
+<!-- Nedladdningsbar fil -->
+<section class="download">
+    <blockquote>"The Internet has revolutionized the computer and communications world like nothing before..."</blockquote>
+ <div class="download-btn-wrapper">
+        <a href="Assets/Downloads/ISOC-History-of-the-Internet_1997.pdf" download class="download-btn">Ladda ner PDF</a>
+    </div>    <p class="report-description">
+        <strong>A Brief History of the Internet</strong><br>
+Oktober 2009 ACM SIGCOMM Computer Communication Review 39(5):22-31<br>
+DOI: 10.1145/1629607.1629613<br>
+Författare: Barry M. Leiner, Vint Cerf (Google Inc.), David Clark (Massachusetts Institute of Technology),<br>
+Robert E. Kahn, och andra.<br><br>
+    </p>
+</section>
+
+<!-- Formulär -->
+<section class="contact-form">
+    <h2>Kontakta oss</h2>
+    <form action="#" method="post">
+        <label for="name">Namn:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">E-post:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Meddelande:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit" class="submit-btn">Skicka Meddelande</button>
+    </form>
+</section>
+
+<!-- Sidfot med upphovsrätt -->
+<footer>
+    <p>@2024 Internets Utvecklingshistoria. Skapad av Pamela Nyberg. Tack för att du besökte min sida!</p>
+</footer>
+</body>
+</html>
